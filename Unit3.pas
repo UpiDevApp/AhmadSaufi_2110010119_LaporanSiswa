@@ -1,43 +1,36 @@
-unit Unit1;
+unit Unit3;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Buttons, Grids, DBGrids, ComCtrls;
+  Dialogs, Grids, DBGrids, StdCtrls, Buttons;
 
 type
-  TForm1 = class(TForm)
+  TForm3 = class(TForm)
     lbl1: TLabel;
-    edt1: TEdit;
     lbl2: TLabel;
-    edt2: TEdit;
     lbl3: TLabel;
-    edt3: TEdit;
     lbl4: TLabel;
+    lbl13: TLabel;
+    edt1: TEdit;
+    edt2: TEdit;
+    edt3: TEdit;
     edt4: TEdit;
     lbl5: TLabel;
+    edt5: TEdit;
     lbl6: TLabel;
-    lbl8: TLabel;
-    lbl9: TLabel;
-    edt9: TEdit;
-    lbl10: TLabel;
-    edt10: TEdit;
-    edt11: TEdit;
-    lbl12: TLabel;
-    lbl13: TLabel;
+    edt6: TEdit;
     lbl7: TLabel;
-    cbb1: TComboBox;
-    dtp1: TDateTimePicker;
-    dtp2: TDateTimePicker;
-    dbgrd1: TDBGrid;
+    edt7: TEdit;
+    lbl8: TLabel;
+    edt8: TEdit;
     BitBtn: TBitBtn;
     BitBtn51: TBitBtn;
     BitBtn52: TBitBtn;
     BitBtn53: TBitBtn;
     BitBtn54: TBitBtn;
-    lbl11: TLabel;
-    edt5: TEdit;
+    dbgrd1: TDBGrid;
   private
     { Private declarations }
   public
@@ -45,7 +38,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Form3: TForm3;
 
 implementation
 

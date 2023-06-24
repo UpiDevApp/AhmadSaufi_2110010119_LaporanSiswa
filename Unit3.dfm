@@ -1,9 +1,9 @@
-object Form1: TForm1
-  Left = 203
-  Top = 156
-  Width = 967
-  Height = 566
-  Caption = 'TABEL SISWA'
+object Form3: TForm3
+  Left = 219
+  Top = 163
+  Width = 840
+  Height = 561
+  Caption = 'TABEL WALI KELAS'
   Color = clAqua
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,9 +16,9 @@ object Form1: TForm1
   object lbl1: TLabel
     Left = 56
     Top = 16
-    Width = 34
+    Width = 29
     Height = 18
-    Caption = 'Nis  :'
+    Caption = 'Nik :'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -42,58 +42,6 @@ object Form1: TForm1
   object lbl3: TLabel
     Left = 56
     Top = 80
-    Width = 89
-    Height = 18
-    Caption = 'Nama Siswa :'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl4: TLabel
-    Left = 56
-    Top = 119
-    Width = 29
-    Height = 18
-    Caption = 'Nik :'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl5: TLabel
-    Left = 56
-    Top = 154
-    Width = 92
-    Height = 18
-    Caption = 'Tempat lahir :'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl6: TLabel
-    Left = 56
-    Top = 184
-    Width = 97
-    Height = 18
-    Caption = 'Tanggal Lahir :'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl8: TLabel
-    Left = 456
-    Top = 16
     Width = 96
     Height = 18
     Caption = 'Jenis Kelamin :'
@@ -104,37 +52,12 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
-  object lbl9: TLabel
-    Left = 456
-    Top = 48
-    Width = 55
+  object lbl4: TLabel
+    Left = 57
+    Top = 113
+    Width = 67
     Height = 18
-    Caption = 'Alamat :'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl10: TLabel
-    Left = 453
-    Top = 83
-    Width = 43
-    Height = 18
-    Caption = ' Telp :'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbl12: TLabel
-    Left = 392
-    Top = 144
-    Width = 5
-    Height = 18
+    Caption = 'Pendidikan'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -144,10 +67,36 @@ object Form1: TForm1
   end
   object lbl13: TLabel
     Left = 56
-    Top = 48
-    Width = 37
+    Top = 51
+    Width = 49
     Height = 18
-    Caption = 'Nisn :'
+    Caption = 'Nama :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl5: TLabel
+    Left = 57
+    Top = 145
+    Width = 28
+    Height = 18
+    Caption = 'Telp'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl6: TLabel
+    Left = 57
+    Top = 177
+    Width = 43
+    Height = 18
+    Caption = 'Matpel'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -156,11 +105,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl7: TLabel
-    Left = 460
-    Top = 155
-    Width = 51
+    Left = 57
+    Top = 209
+    Width = 45
     Height = 18
-    Caption = 'Status :'
+    Caption = 'Alamat'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -168,12 +117,12 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
-  object lbl11: TLabel
-    Left = 460
-    Top = 121
-    Width = 28
+  object lbl8: TLabel
+    Left = 57
+    Top = 241
+    Width = 41
     Height = 18
-    Caption = 'Hp :'
+    Caption = 'Status'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -233,9 +182,9 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 3
   end
-  object edt9: TEdit
-    Left = 584
-    Top = 48
+  object edt5: TEdit
+    Left = 216
+    Top = 144
     Width = 200
     Height = 26
     Font.Charset = DEFAULT_CHARSET
@@ -246,9 +195,9 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 4
   end
-  object edt10: TEdit
-    Left = 584
-    Top = 80
+  object edt6: TEdit
+    Left = 216
+    Top = 176
     Width = 200
     Height = 26
     Font.Charset = DEFAULT_CHARSET
@@ -259,9 +208,9 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 5
   end
-  object edt11: TEdit
-    Left = 584
-    Top = 118
+  object edt7: TEdit
+    Left = 216
+    Top = 208
     Width = 200
     Height = 26
     Font.Charset = DEFAULT_CHARSET
@@ -272,87 +221,9 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 6
   end
-  object cbb1: TComboBox
-    Left = 584
-    Top = 16
-    Width = 201
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 7
-  end
-  object dtp1: TDateTimePicker
+  object edt8: TEdit
     Left = 216
-    Top = 152
-    Width = 200
-    Height = 21
-    Date = 45101.827160011580000000
-    Time = 45101.827160011580000000
-    TabOrder = 8
-  end
-  object dtp2: TDateTimePicker
-    Left = 216
-    Top = 184
-    Width = 200
-    Height = 21
-    Date = 45101.827754594910000000
-    Time = 45101.827754594910000000
-    TabOrder = 9
-  end
-  object dbgrd1: TDBGrid
-    Left = 56
-    Top = 312
-    Width = 825
-    Height = 201
-    TabOrder = 10
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
-  end
-  object BitBtn: TBitBtn
-    Left = 64
-    Top = 224
-    Width = 90
-    Height = 57
-    Caption = 'BitBtn'
-    TabOrder = 11
-  end
-  object BitBtn51: TBitBtn
-    Left = 176
-    Top = 224
-    Width = 90
-    Height = 57
-    Caption = 'BitBtn'
-    TabOrder = 12
-  end
-  object BitBtn52: TBitBtn
-    Left = 280
-    Top = 224
-    Width = 90
-    Height = 57
-    Caption = 'BitBtn'
-    TabOrder = 13
-  end
-  object BitBtn53: TBitBtn
-    Left = 384
-    Top = 224
-    Width = 90
-    Height = 57
-    Caption = 'BitBtn'
-    TabOrder = 14
-  end
-  object BitBtn54: TBitBtn
-    Left = 480
-    Top = 224
-    Width = 90
-    Height = 57
-    Caption = 'BitBtn'
-    TabOrder = 15
-  end
-  object edt5: TEdit
-    Left = 584
-    Top = 158
+    Top = 240
     Width = 200
     Height = 26
     Font.Charset = DEFAULT_CHARSET
@@ -361,6 +232,58 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 7
+  end
+  object BitBtn: TBitBtn
+    Left = 464
+    Top = 16
+    Width = 90
+    Height = 57
+    Caption = 'BitBtn'
+    TabOrder = 8
+  end
+  object BitBtn51: TBitBtn
+    Left = 464
+    Top = 88
+    Width = 90
+    Height = 57
+    Caption = 'BitBtn'
+    TabOrder = 9
+  end
+  object BitBtn52: TBitBtn
+    Left = 584
+    Top = 16
+    Width = 90
+    Height = 57
+    Caption = 'BitBtn'
+    TabOrder = 10
+  end
+  object BitBtn53: TBitBtn
+    Left = 584
+    Top = 88
+    Width = 90
+    Height = 57
+    Caption = 'BitBtn'
+    TabOrder = 11
+  end
+  object BitBtn54: TBitBtn
+    Left = 706
+    Top = 16
+    Width = 90
+    Height = 57
+    Caption = 'BitBtn'
+    TabOrder = 12
+  end
+  object dbgrd1: TDBGrid
+    Left = 56
+    Top = 288
+    Width = 745
+    Height = 193
+    TabOrder = 13
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
   end
 end
