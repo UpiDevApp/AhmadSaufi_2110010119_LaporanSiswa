@@ -267,7 +267,7 @@ object Form6: TForm6
     Top = 208
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'BARU'
     TabOrder = 8
   end
   object BitBtn51: TBitBtn
@@ -275,7 +275,7 @@ object Form6: TForm6
     Top = 208
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'SIMPAN'
     TabOrder = 9
   end
   object BitBtn52: TBitBtn
@@ -283,7 +283,7 @@ object Form6: TForm6
     Top = 208
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'EDIT'
     TabOrder = 10
   end
   object BitBtn53: TBitBtn
@@ -291,7 +291,7 @@ object Form6: TForm6
     Top = 208
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'HAPUS'
     TabOrder = 11
   end
   object BitBtn54: TBitBtn
@@ -299,7 +299,7 @@ object Form6: TForm6
     Top = 208
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'BATAL'
     TabOrder = 12
   end
   object cbb2: TComboBox

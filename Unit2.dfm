@@ -83,7 +83,7 @@ object Form2: TForm2
     Top = 152
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'BARU'
     TabOrder = 3
   end
   object BitBtn51: TBitBtn
@@ -91,7 +91,7 @@ object Form2: TForm2
     Top = 152
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'SIMPAN'
     TabOrder = 4
   end
   object BitBtn52: TBitBtn
@@ -99,7 +99,7 @@ object Form2: TForm2
     Top = 152
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'EDIT'
     TabOrder = 5
   end
   object BitBtn53: TBitBtn
@@ -107,7 +107,7 @@ object Form2: TForm2
     Top = 152
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'HAPUS'
     TabOrder = 6
   end
   object BitBtn54: TBitBtn
@@ -115,7 +115,7 @@ object Form2: TForm2
     Top = 152
     Width = 90
     Height = 57
-    Caption = 'BitBtn'
+    Caption = 'BATAL'
     TabOrder = 7
   end
   object ZConnection1: TZConnection
