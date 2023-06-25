@@ -1,5 +1,5 @@
 object Form4: TForm4
-  Left = 192
+  Left = 209
   Top = 152
   Width = 928
   Height = 550
@@ -130,6 +130,7 @@ object Form4: TForm4
     Top = 264
     Width = 857
     Height = 217
+    DataSource = ds1
     TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -176,5 +177,33 @@ object Form4: TForm4
     Height = 57
     Caption = 'BitBtn'
     TabOrder = 9
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'laporan_siswa'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
+    Left = 472
+    Top = 16
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from poin')
+    Params = <>
+    Left = 472
+    Top = 64
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 472
+    Top = 120
   end
 end

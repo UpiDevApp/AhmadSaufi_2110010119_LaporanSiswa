@@ -303,6 +303,7 @@ object Form1: TForm1
     Top = 312
     Width = 825
     Height = 201
+    DataSource = ds1
     TabOrder = 10
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -362,5 +363,33 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 16
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'laporan_siswa'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
+    Left = 608
+    Top = 224
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from siswa')
+    Params = <>
+    Left = 672
+    Top = 224
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 744
+    Top = 232
   end
 end

@@ -279,11 +279,40 @@ object Form3: TForm3
     Top = 288
     Width = 745
     Height = 193
+    DataSource = ds1
     TabOrder = 13
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'laporan_siswa'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
+    Left = 472
+    Top = 168
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from wali_kelas')
+    Params = <>
+    Left = 544
+    Top = 168
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 600
+    Top = 168
   end
 end

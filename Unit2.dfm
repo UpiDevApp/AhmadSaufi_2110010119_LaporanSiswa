@@ -70,6 +70,7 @@ object Form2: TForm2
     Top = 248
     Width = 545
     Height = 145
+    DataSource = ds1
     TabOrder = 2
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -116,5 +117,33 @@ object Form2: TForm2
     Height = 57
     Caption = 'BitBtn'
     TabOrder = 7
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'laporan_siswa'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
+    Left = 400
+    Top = 24
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from kelas')
+    Params = <>
+    Left = 400
+    Top = 80
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 464
+    Top = 24
   end
 end
