@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 219
-  Top = 163
+  Left = 507
+  Top = 137
   Width = 840
   Height = 561
   Caption = 'TABEL WALI KELAS'
@@ -156,19 +156,6 @@ object Form3: TForm3
     ParentFont = False
     TabOrder = 1
   end
-  object edt3: TEdit
-    Left = 216
-    Top = 80
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 2
-  end
   object edt4: TEdit
     Left = 216
     Top = 112
@@ -180,7 +167,7 @@ object Form3: TForm3
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 2
   end
   object edt5: TEdit
     Left = 216
@@ -193,7 +180,7 @@ object Form3: TForm3
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 3
   end
   object edt6: TEdit
     Left = 216
@@ -206,7 +193,7 @@ object Form3: TForm3
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
   end
   object edt7: TEdit
     Left = 216
@@ -219,7 +206,7 @@ object Form3: TForm3
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
   end
   object edt8: TEdit
     Left = 216
@@ -232,47 +219,52 @@ object Form3: TForm3
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 6
   end
-  object BitBtn: TBitBtn
+  object BitBtn1: TBitBtn
     Left = 464
     Top = 16
     Width = 90
     Height = 57
     Caption = 'BARU'
-    TabOrder = 8
+    TabOrder = 7
+    OnClick = BitBtn1Click
   end
-  object BitBtn51: TBitBtn
+  object BitBtn2: TBitBtn
     Left = 464
     Top = 88
     Width = 90
     Height = 57
     Caption = 'SIMPAN'
-    TabOrder = 9
+    TabOrder = 8
+    OnClick = BitBtn2Click
   end
-  object BitBtn52: TBitBtn
+  object BitBtn3: TBitBtn
     Left = 584
     Top = 16
     Width = 90
     Height = 57
     Caption = 'EDIT'
-    TabOrder = 10
+    TabOrder = 9
+    OnClick = BitBtn3Click
   end
-  object BitBtn53: TBitBtn
+  object BitBtn4: TBitBtn
     Left = 584
     Top = 88
     Width = 90
     Height = 57
     Caption = 'HAPUS'
-    TabOrder = 11
+    TabOrder = 10
+    OnClick = BitBtn4Click
   end
-  object BitBtn54: TBitBtn
+  object BitBtn5: TBitBtn
     Left = 706
     Top = 16
     Width = 90
     Height = 57
     Caption = 'BATAL'
-    TabOrder = 12
+    TabOrder = 11
+    OnClick = BitBtn5Click
   end
   object dbgrd1: TDBGrid
     Left = 56
@@ -280,12 +272,24 @@ object Form3: TForm3
     Width = 745
     Height = 193
     DataSource = ds1
-    TabOrder = 13
+    TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object cbb1: TComboBox
+    Left = 216
+    Top = 80
+    Width = 201
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 13
+    Items.Strings = (
+      'laki-laki'
+      'perempuan')
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
