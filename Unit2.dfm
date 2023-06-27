@@ -52,26 +52,13 @@ object Form2: TForm2
     ParentFont = False
     TabOrder = 0
   end
-  object edt2: TEdit
-    Left = 128
-    Top = 56
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 1
-  end
   object dbgrd1: TDBGrid
     Left = 16
     Top = 248
     Width = 545
     Height = 145
     DataSource = ds1
-    TabOrder = 2
+    TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -84,7 +71,7 @@ object Form2: TForm2
     Width = 90
     Height = 57
     Caption = 'BARU'
-    TabOrder = 3
+    TabOrder = 2
   end
   object BitBtn51: TBitBtn
     Left = 144
@@ -92,7 +79,8 @@ object Form2: TForm2
     Width = 90
     Height = 57
     Caption = 'SIMPAN'
-    TabOrder = 4
+    TabOrder = 3
+    OnClick = BitBtn51Click
   end
   object BitBtn52: TBitBtn
     Left = 248
@@ -100,7 +88,7 @@ object Form2: TForm2
     Width = 90
     Height = 57
     Caption = 'EDIT'
-    TabOrder = 5
+    TabOrder = 4
   end
   object BitBtn53: TBitBtn
     Left = 360
@@ -108,7 +96,7 @@ object Form2: TForm2
     Width = 90
     Height = 57
     Caption = 'HAPUS'
-    TabOrder = 6
+    TabOrder = 5
   end
   object BitBtn54: TBitBtn
     Left = 466
@@ -116,7 +104,16 @@ object Form2: TForm2
     Width = 90
     Height = 57
     Caption = 'BATAL'
+    TabOrder = 6
+  end
+  object cbb1: TComboBox
+    Left = 128
+    Top = 56
+    Width = 201
+    Height = 21
+    ItemHeight = 13
     TabOrder = 7
+    Text = 'cbb1'
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

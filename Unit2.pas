@@ -12,7 +12,6 @@ type
     lbl1: TLabel;
     edt1: TEdit;
     lbl2: TLabel;
-    edt2: TEdit;
     dbgrd1: TDBGrid;
     BitBtn: TBitBtn;
     BitBtn51: TBitBtn;
@@ -22,6 +21,8 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
+    cbb1: TComboBox;
+    procedure BitBtn51Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,5 +35,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm2.BitBtn51Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('insert into kelas values (null,"'+edt1.Text+'","'+cbb1.Text+'")');
+ZQuery1.ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from kelas');
+ZQuery1.Open;
+end;
 
 end.
