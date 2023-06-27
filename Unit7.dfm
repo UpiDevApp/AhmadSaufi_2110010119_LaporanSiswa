@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 194
-  Top = 162
+  Left = 163
+  Top = 161
   Width = 928
   Height = 550
   Caption = 'TABEL HUBUNGAN'
@@ -119,13 +119,13 @@ object Form7: TForm7
   end
   object cbb1: TComboBox
     Left = 256
-    Top = 157
+    Top = 85
     Width = 200
     Height = 21
     ItemHeight = 13
     TabOrder = 2
   end
-  object edt4: TEdit
+  object edt3: TEdit
     Left = 256
     Top = 120
     Width = 200
@@ -140,29 +140,31 @@ object Form7: TForm7
   end
   object cbb2: TComboBox
     Left = 256
-    Top = 85
+    Top = 157
     Width = 200
     Height = 21
     ItemHeight = 13
     TabOrder = 4
   end
-  object BitBtn: TBitBtn
+  object BitBtn1: TBitBtn
     Left = 56
     Top = 192
     Width = 90
     Height = 57
     Caption = 'BARU'
     TabOrder = 5
+    OnClick = BitBtn1Click
   end
-  object BitBtn51: TBitBtn
+  object BitBtn2: TBitBtn
     Left = 168
     Top = 192
     Width = 90
     Height = 57
     Caption = 'SIMPAN'
     TabOrder = 6
+    OnClick = BitBtn2Click
   end
-  object BitBtn52: TBitBtn
+  object BitBtn3: TBitBtn
     Left = 272
     Top = 192
     Width = 90
@@ -170,7 +172,7 @@ object Form7: TForm7
     Caption = 'EDIT'
     TabOrder = 7
   end
-  object BitBtn53: TBitBtn
+  object BitBtn4: TBitBtn
     Left = 376
     Top = 192
     Width = 90
@@ -178,13 +180,14 @@ object Form7: TForm7
     Caption = 'HAPUS'
     TabOrder = 8
   end
-  object BitBtn54: TBitBtn
+  object BitBtn5: TBitBtn
     Left = 488
     Top = 192
     Width = 90
     Height = 57
     Caption = 'BATAL'
     TabOrder = 9
+    OnClick = BitBtn5Click
   end
   object dbgrd1: TDBGrid
     Left = 48

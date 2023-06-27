@@ -203,7 +203,7 @@ object Form5: TForm5
     Time = 45101.827160011580000000
     TabOrder = 4
   end
-  object edt9: TEdit
+  object edt6: TEdit
     Left = 544
     Top = 80
     Width = 200
@@ -216,7 +216,7 @@ object Form5: TForm5
     ParentFont = False
     TabOrder = 5
   end
-  object edt10: TEdit
+  object edt7: TEdit
     Left = 544
     Top = 112
     Width = 200
@@ -229,7 +229,7 @@ object Form5: TForm5
     ParentFont = False
     TabOrder = 6
   end
-  object edt6: TEdit
+  object edt5: TEdit
     Left = 544
     Top = 16
     Width = 200

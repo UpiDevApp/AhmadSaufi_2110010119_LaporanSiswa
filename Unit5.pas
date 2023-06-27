@@ -24,10 +24,10 @@ type
     lbl8: TLabel;
     lbl9: TLabel;
     lbl10: TLabel;
-    edt9: TEdit;
-    edt10: TEdit;
-    lbl5: TLabel;
     edt6: TEdit;
+    edt7: TEdit;
+    lbl5: TLabel;
+    edt5: TEdit;
     BitBtn: TBitBtn;
     BitBtn51: TBitBtn;
     BitBtn52: TBitBtn;
