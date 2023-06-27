@@ -323,6 +323,15 @@ object Form5: TForm5
       '11'
       '12')
   end
+  object BitBtn: TBitBtn
+    Left = 576
+    Top = 184
+    Width = 90
+    Height = 57
+    Caption = 'LAPORAN'
+    TabOrder = 15
+    OnClick = BitBtn5Click
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -334,8 +343,8 @@ object Form5: TForm5
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
-    Left = 592
-    Top = 184
+    Left = 800
+    Top = 24
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -343,12 +352,12 @@ object Form5: TForm5
     SQL.Strings = (
       'select * from semester')
     Params = <>
-    Left = 656
-    Top = 184
+    Left = 800
+    Top = 80
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 712
-    Top = 192
+    Left = 800
+    Top = 152
   end
 end

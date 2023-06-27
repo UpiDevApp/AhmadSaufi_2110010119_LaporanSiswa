@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 563
-  Top = 147
+  Left = 265
+  Top = 158
   Width = 928
   Height = 550
   Caption = 'TABEL HUBUNGAN'
@@ -11,6 +11,7 @@ object Form7: TForm7
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -210,6 +211,15 @@ object Form7: TForm7
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
     OnCellClick = dbgrd1CellClick
+  end
+  object BitBtn: TBitBtn
+    Left = 592
+    Top = 192
+    Width = 90
+    Height = 57
+    Caption = 'LAPORAN'
+    TabOrder = 11
+    OnClick = BitBtn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

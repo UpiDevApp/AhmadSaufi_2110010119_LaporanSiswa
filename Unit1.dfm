@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 431
-  Top = 152
+  Left = 208
+  Top = 154
   Width = 958
   Height = 566
   Caption = 'TABEL SISWA'
@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -435,6 +436,15 @@ object Form1: TForm1
     Items.Strings = (
       'aktif'
       'tidak')
+  end
+  object BitBtn: TBitBtn
+    Left = 592
+    Top = 224
+    Width = 90
+    Height = 57
+    Caption = 'Laporan'
+    TabOrder = 17
+    OnClick = BitBtn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

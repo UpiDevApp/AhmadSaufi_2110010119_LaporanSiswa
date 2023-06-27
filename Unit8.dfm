@@ -11,6 +11,7 @@ object Form8: TForm8
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -284,6 +285,15 @@ object Form8: TForm8
     Time = 45104.982623564810000000
     TabOrder = 13
   end
+  object BitBtn: TBitBtn
+    Left = 616
+    Top = 160
+    Width = 90
+    Height = 57
+    Caption = 'LAPORAN'
+    TabOrder = 14
+    OnClick = BitBtn5Click
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -295,8 +305,8 @@ object Form8: TForm8
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
-    Left = 648
-    Top = 168
+    Left = 792
+    Top = 72
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1

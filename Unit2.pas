@@ -22,6 +22,7 @@ type
     ZQuery1: TZQuery;
     ds1: TDataSource;
     cbb1: TComboBox;
+    BitBtn: TBitBtn;
     procedure BitBtn2Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure BitBtn3Click(Sender: TObject);
@@ -30,6 +31,7 @@ type
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
     procedure BitBtn5Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -164,6 +166,11 @@ procedure TForm2.BitBtn5Click(Sender: TObject);
 begin
    posisiawal;
   bersih;
+end;
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+ posisiawal;
 end;
 
 end.

@@ -40,6 +40,7 @@ type
     cbb1: TComboBox;
     cbb2: TComboBox;
     edt7: TEdit;
+    BitBtn: TBitBtn;
     procedure posisiawal;
     procedure bersih;
     procedure BitBtn1Click(Sender: TObject);
@@ -48,6 +49,7 @@ type
     procedure BitBtn3Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure BitBtn4Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -218,6 +220,11 @@ if MessageDlg('Apakah yakin menghapus data ini?',mtWarning,[mbYes,mbNo],0)= mrye
     ShowMessage('Data Batal Dihapus');
     posisiawal;
   end;
+end;
+
+procedure TForm6.FormShow(Sender: TObject);
+begin
+posisiawal;
 end;
 
 end.

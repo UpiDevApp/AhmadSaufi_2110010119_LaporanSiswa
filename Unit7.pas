@@ -29,6 +29,7 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
+    BitBtn: TBitBtn;
     procedure bersih;
     procedure posisiawal;
     procedure BitBtn1Click(Sender: TObject);
@@ -37,6 +38,7 @@ type
     procedure dbgrd1CellClick(Column: TColumn);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -186,6 +188,11 @@ begin
     ShowMessage('Data Batal Dihapus');
     posisiawal;
   end;
+end;
+
+procedure TForm7.FormShow(Sender: TObject);
+begin
+posisiawal;
 end;
 
 end.

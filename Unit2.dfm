@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 424
   Top = 194
-  Width = 608
+  Width = 710
   Height = 448
   Caption = 'TABEL KELAS'
   Color = clAqua
@@ -11,6 +11,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -121,6 +122,15 @@ object Form2: TForm2
     Items.Strings = (
       'ipa'
       'ips')
+  end
+  object BitBtn: TBitBtn
+    Left = 570
+    Top = 152
+    Width = 90
+    Height = 57
+    Caption = 'Laporan'
+    TabOrder = 8
+    OnClick = BitBtn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

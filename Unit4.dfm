@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 758
-  Top = 174
+  Left = 423
+  Top = 176
   Width = 928
   Height = 550
   Caption = 'TABEL POIN'
@@ -11,6 +11,7 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -184,6 +185,15 @@ object Form4: TForm4
     Items.Strings = (
       'aktif'
       'tidak')
+  end
+  object BitBtn: TBitBtn
+    Left = 568
+    Top = 176
+    Width = 90
+    Height = 57
+    Caption = 'Laporan'
+    TabOrder = 10
+    OnClick = BitBtn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

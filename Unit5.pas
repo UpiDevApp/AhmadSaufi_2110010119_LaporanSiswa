@@ -39,6 +39,7 @@ type
     cbb2: TComboBox;
     lbl6: TLabel;
     cbb3: TComboBox;
+    BitBtn: TBitBtn;
     procedure bersih;
     procedure posisiawal;
     procedure BitBtn1Click(Sender: TObject);

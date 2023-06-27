@@ -1,5 +1,5 @@
 object Form3: TForm3
-  Left = 507
+  Left = 232
   Top = 137
   Width = 840
   Height = 561
@@ -11,6 +11,7 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -290,6 +291,15 @@ object Form3: TForm3
     Items.Strings = (
       'laki-laki'
       'perempuan')
+  end
+  object BitBtn: TBitBtn
+    Left = 706
+    Top = 88
+    Width = 90
+    Height = 57
+    Caption = 'Laporan'
+    TabOrder = 14
+    OnClick = BitBtn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

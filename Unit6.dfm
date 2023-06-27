@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 439
-  Top = 162
+  Left = 264
+  Top = 157
   Width = 928
   Height = 552
   Caption = 'TABEL ORTU'
@@ -11,6 +11,7 @@ object Form6: TForm6
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -338,6 +339,15 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
     TabOrder = 14
+  end
+  object BitBtn: TBitBtn
+    Left = 592
+    Top = 208
+    Width = 90
+    Height = 57
+    Caption = 'LAPORAN'
+    TabOrder = 15
+    OnClick = BitBtn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

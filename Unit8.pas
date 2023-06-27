@@ -36,6 +36,7 @@ type
     dtp2: TDateTimePicker;
     dtp3: TDateTimePicker;
     dtp4: TDateTimePicker;
+    BitBtn: TBitBtn;
     procedure bersih;
     procedure posisiawal;
     procedure BitBtn5Click(Sender: TObject);
@@ -44,6 +45,7 @@ type
     procedure BitBtn3Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure BitBtn4Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -206,6 +208,11 @@ begin
     ShowMessage('Data Batal Dihapus');
     posisiawal;
   end;
+end;
+
+procedure TForm8.FormShow(Sender: TObject);
+begin
+posisiawal;
 end;
 
 end.
