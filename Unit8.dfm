@@ -1,8 +1,8 @@
 object Form8: TForm8
-  Left = 210
-  Top = 167
-  Width = 928
-  Height = 547
+  Left = 208
+  Top = 202
+  Width = 853
+  Height = 465
   Caption = 'TABEL USER'
   Color = clAqua
   Font.Charset = DEFAULT_CHARSET
@@ -85,8 +85,8 @@ object Form8: TForm8
     ParentFont = False
   end
   object lbl5: TLabel
-    Left = 56
-    Top = 152
+    Left = 416
+    Top = 16
     Width = 72
     Height = 18
     Caption = 'Created_at'
@@ -98,8 +98,8 @@ object Form8: TForm8
     ParentFont = False
   end
   object lbl7: TLabel
-    Left = 56
-    Top = 184
+    Left = 416
+    Top = 48
     Width = 99
     Height = 18
     Caption = 'Create_userid :'
@@ -111,8 +111,8 @@ object Form8: TForm8
     ParentFont = False
   end
   object lbl8: TLabel
-    Left = 56
-    Top = 224
+    Left = 416
+    Top = 88
     Width = 86
     Height = 18
     Caption = 'Updated_at :'
@@ -123,8 +123,21 @@ object Form8: TForm8
     Font.Style = []
     ParentFont = False
   end
+  object lbl9: TLabel
+    Left = 416
+    Top = 120
+    Width = 101
+    Height = 18
+    Caption = 'update_userid :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object edt1: TEdit
-    Left = 256
+    Left = 176
     Top = 16
     Width = 200
     Height = 26
@@ -137,7 +150,7 @@ object Form8: TForm8
     TabOrder = 0
   end
   object edt2: TEdit
-    Left = 256
+    Left = 176
     Top = 48
     Width = 200
     Height = 26
@@ -149,8 +162,22 @@ object Form8: TForm8
     ParentFont = False
     TabOrder = 1
   end
-  object edt4: TEdit
-    Left = 256
+  object cbb1: TComboBox
+    Left = 176
+    Top = 85
+    Width = 200
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 2
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5')
+  end
+  object edt3: TEdit
+    Left = 176
     Top = 120
     Width = 200
     Height = 26
@@ -160,107 +187,102 @@ object Form8: TForm8
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
-  end
-  object cbb2: TComboBox
-    Left = 256
-    Top = 85
-    Width = 200
-    Height = 21
-    ItemHeight = 13
     TabOrder = 3
   end
-  object edt3: TEdit
-    Left = 256
-    Top = 152
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 4
-  end
-  object edt5: TEdit
-    Left = 256
-    Top = 184
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 5
-  end
-  object edt6: TEdit
-    Left = 256
-    Top = 224
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 6
-  end
-  object BitBtn: TBitBtn
-    Left = 56
-    Top = 264
+  object BitBtn1: TBitBtn
+    Left = 48
+    Top = 160
     Width = 90
     Height = 57
     Caption = 'BARU'
-    TabOrder = 7
+    TabOrder = 4
+    OnClick = BitBtn1Click
   end
-  object BitBtn51: TBitBtn
+  object BitBtn2: TBitBtn
     Left = 168
-    Top = 264
+    Top = 160
     Width = 90
     Height = 57
     Caption = 'SIMPAN'
-    TabOrder = 8
+    TabOrder = 5
+    OnClick = BitBtn2Click
   end
-  object BitBtn52: TBitBtn
-    Left = 272
-    Top = 264
+  object BitBtn3: TBitBtn
+    Left = 280
+    Top = 160
     Width = 90
     Height = 57
     Caption = 'EDIT'
-    TabOrder = 9
+    TabOrder = 6
+    OnClick = BitBtn3Click
   end
-  object BitBtn53: TBitBtn
-    Left = 376
-    Top = 264
+  object BitBtn4: TBitBtn
+    Left = 392
+    Top = 160
     Width = 90
     Height = 57
     Caption = 'HAPUS'
-    TabOrder = 10
+    TabOrder = 7
+    OnClick = BitBtn4Click
   end
-  object BitBtn54: TBitBtn
-    Left = 472
-    Top = 264
+  object BitBtn5: TBitBtn
+    Left = 504
+    Top = 160
     Width = 90
     Height = 57
     Caption = 'BATAL'
-    TabOrder = 11
+    TabOrder = 8
+    OnClick = BitBtn5Click
   end
   object dbgrd1: TDBGrid
-    Left = 56
-    Top = 336
-    Width = 689
+    Left = 48
+    Top = 248
+    Width = 753
     Height = 153
     DataSource = ds1
-    TabOrder = 12
+    TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object dtp1: TDateTimePicker
+    Left = 536
+    Top = 16
+    Width = 186
+    Height = 21
+    Date = 45104.982391620370000000
+    Time = 45104.982391620370000000
+    TabOrder = 10
+  end
+  object dtp2: TDateTimePicker
+    Left = 536
+    Top = 48
+    Width = 186
+    Height = 21
+    Date = 45104.982511064820000000
+    Time = 45104.982511064820000000
+    TabOrder = 11
+  end
+  object dtp3: TDateTimePicker
+    Left = 536
+    Top = 88
+    Width = 186
+    Height = 21
+    Date = 45104.982565324080000000
+    Time = 45104.982565324080000000
+    TabOrder = 12
+  end
+  object dtp4: TDateTimePicker
+    Left = 536
+    Top = 120
+    Width = 186
+    Height = 21
+    Date = 45104.982623564810000000
+    Time = 45104.982623564810000000
+    TabOrder = 13
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -273,8 +295,8 @@ object Form8: TForm8
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
-    Left = 496
-    Top = 16
+    Left = 648
+    Top = 168
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -282,12 +304,12 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from user')
     Params = <>
-    Left = 560
-    Top = 16
+    Left = 768
+    Top = 168
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 624
-    Top = 16
+    Left = 720
+    Top = 168
   end
 end

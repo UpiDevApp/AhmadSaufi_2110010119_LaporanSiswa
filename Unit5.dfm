@@ -1,8 +1,8 @@
 object Form5: TForm5
-  Left = 192
-  Top = 152
+  Left = 234
+  Top = 155
   Width = 928
-  Height = 480
+  Height = 527
   Caption = 'TABEL SEMESTER'
   Color = clAqua
   Font.Charset = DEFAULT_CHARSET
@@ -11,6 +11,7 @@ object Form5: TForm5
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -142,6 +143,19 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
   end
+  object lbl6: TLabel
+    Left = 450
+    Top = 139
+    Width = 87
+    Height = 18
+    Caption = 'Tingkat Kelas'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object edt1: TEdit
     Left = 216
     Top = 16
@@ -195,7 +209,7 @@ object Form5: TForm5
     TabOrder = 3
   end
   object dtp1: TDateTimePicker
-    Left = 544
+    Left = 560
     Top = 48
     Width = 200
     Height = 21
@@ -203,9 +217,9 @@ object Form5: TForm5
     Time = 45101.827160011580000000
     TabOrder = 4
   end
-  object edt6: TEdit
-    Left = 544
-    Top = 80
+  object edt5: TEdit
+    Left = 560
+    Top = 16
     Width = 200
     Height = 26
     Font.Charset = DEFAULT_CHARSET
@@ -216,84 +230,98 @@ object Form5: TForm5
     ParentFont = False
     TabOrder = 5
   end
-  object edt7: TEdit
-    Left = 544
-    Top = 112
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 6
-  end
-  object edt5: TEdit
-    Left = 544
-    Top = 16
-    Width = 200
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 7
-  end
-  object BitBtn: TBitBtn
+  object BitBtn1: TBitBtn
     Left = 56
-    Top = 152
+    Top = 184
     Width = 90
     Height = 57
     Caption = 'BARU'
-    TabOrder = 8
+    TabOrder = 6
+    OnClick = BitBtn1Click
   end
-  object BitBtn51: TBitBtn
+  object BitBtn2: TBitBtn
     Left = 168
-    Top = 152
+    Top = 184
     Width = 90
     Height = 57
     Caption = 'SIMPAN'
-    TabOrder = 9
+    TabOrder = 7
+    OnClick = BitBtn2Click
   end
-  object BitBtn52: TBitBtn
+  object BitBtn3: TBitBtn
     Left = 272
-    Top = 152
+    Top = 184
     Width = 90
     Height = 57
     Caption = 'EDIT'
-    TabOrder = 10
+    TabOrder = 8
+    OnClick = BitBtn3Click
   end
-  object BitBtn53: TBitBtn
+  object BitBtn4: TBitBtn
     Left = 376
-    Top = 152
+    Top = 184
     Width = 90
     Height = 57
     Caption = 'HAPUS'
-    TabOrder = 11
+    TabOrder = 9
+    OnClick = BitBtn4Click
   end
-  object BitBtn54: TBitBtn
+  object BitBtn5: TBitBtn
     Left = 472
-    Top = 152
+    Top = 184
     Width = 90
     Height = 57
     Caption = 'BATAL'
-    TabOrder = 12
+    TabOrder = 10
+    OnClick = BitBtn5Click
   end
   object dbgrd1: TDBGrid
     Left = 32
-    Top = 232
+    Top = 256
     Width = 817
     Height = 185
     DataSource = ds1
-    TabOrder = 13
+    TabOrder = 11
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object cbb1: TComboBox
+    Left = 560
+    Top = 80
+    Width = 201
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 12
+    Items.Strings = (
+      'Ganjil'
+      'Genap')
+  end
+  object cbb2: TComboBox
+    Left = 560
+    Top = 112
+    Width = 201
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 13
+    Items.Strings = (
+      'Lulus'
+      'Tidak Lulus')
+  end
+  object cbb3: TComboBox
+    Left = 560
+    Top = 144
+    Width = 201
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 14
+    Items.Strings = (
+      '10'
+      '11'
+      '12')
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -307,7 +335,7 @@ object Form5: TForm5
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
     Left = 592
-    Top = 152
+    Top = 184
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -316,11 +344,11 @@ object Form5: TForm5
       'select * from semester')
     Params = <>
     Left = 656
-    Top = 152
+    Top = 184
   end
   object ds1: TDataSource
     DataSet = ZQuery1
     Left = 712
-    Top = 160
+    Top = 192
   end
 end

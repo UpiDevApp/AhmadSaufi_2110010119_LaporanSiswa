@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 163
-  Top = 161
+  Left = 563
+  Top = 147
   Width = 928
   Height = 550
   Caption = 'TABEL HUBUNGAN'
