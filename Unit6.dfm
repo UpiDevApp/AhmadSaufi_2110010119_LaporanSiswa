@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 192
-  Top = 198
+  Left = 439
+  Top = 162
   Width = 928
   Height = 552
   Caption = 'TABEL ORTU'

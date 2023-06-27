@@ -124,6 +124,9 @@ object Form7: TForm7
     Height = 21
     ItemHeight = 13
     TabOrder = 2
+    Items.Strings = (
+      'kandung'
+      'bukan kandung')
   end
   object edt3: TEdit
     Left = 256
@@ -145,6 +148,9 @@ object Form7: TForm7
     Height = 21
     ItemHeight = 13
     TabOrder = 4
+    Items.Strings = (
+      'alm'
+      'hidup')
   end
   object BitBtn1: TBitBtn
     Left = 56
@@ -171,6 +177,7 @@ object Form7: TForm7
     Height = 57
     Caption = 'EDIT'
     TabOrder = 7
+    OnClick = BitBtn3Click
   end
   object BitBtn4: TBitBtn
     Left = 376
@@ -179,6 +186,7 @@ object Form7: TForm7
     Height = 57
     Caption = 'HAPUS'
     TabOrder = 8
+    OnClick = BitBtn4Click
   end
   object BitBtn5: TBitBtn
     Left = 488
@@ -201,6 +209,7 @@ object Form7: TForm7
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
