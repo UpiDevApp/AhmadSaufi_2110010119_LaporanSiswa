@@ -42,10 +42,10 @@ type
     ZQuery1: TZQuery;
     ds1: TDataSource;
     edt8: TEdit;
-    frxDBDataset1: TfrxDBDataset;
-    frxReport1: TfrxReport;
+    frxdatasiswa: TfrxDBDataset;
     cbb2: TComboBox;
     BitBtn: TBitBtn;
+    frxReport1: TfrxReport;
     procedure bersih;
     procedure posisiawal;
 
@@ -232,8 +232,7 @@ end;
 
 procedure TForm1.BitBtn5Click(Sender: TObject);
 begin
- posisiawal;
-  bersih;
+ frxReport1.showreport();
 end;
 
 procedure TForm1.FormShow(Sender: TObject);
