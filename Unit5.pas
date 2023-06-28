@@ -41,7 +41,7 @@ type
     cbb3: TComboBox;
     BitBtn: TBitBtn;
     frxdatasemester: TfrxDBDataset;
-    frxuserfrxsemester: TfrxReport;
+    frxsemester: TfrxReport;
     procedure bersih;
     procedure posisiawal;
     procedure BitBtn1Click(Sender: TObject);
@@ -115,8 +115,7 @@ end;
 
 procedure TForm5.BitBtn5Click(Sender: TObject);
 begin
-bersih;
-posisiawal;
+frxsemester.ShowReport();
 end;
 
 procedure TForm5.BitBtn2Click(Sender: TObject);
