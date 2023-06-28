@@ -5,7 +5,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, DBGrids, StdCtrls, Buttons, DB, ZAbstractRODataset,
-  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection, ComCtrls;
+  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection, ComCtrls,
+  frxClass, frxDBSet;
 
 type
   TForm8 = class(TForm)
@@ -37,6 +38,8 @@ type
     dtp3: TDateTimePicker;
     dtp4: TDateTimePicker;
     BitBtn: TBitBtn;
+    frxdatauser: TfrxDBDataset;
+    frxuser: TfrxReport;
     procedure bersih;
     procedure posisiawal;
     procedure BitBtn5Click(Sender: TObject);
@@ -89,8 +92,7 @@ end;
 
 procedure TForm8.BitBtn5Click(Sender: TObject);
 begin
-bersih;
-posisiawal;
+frxuser.ShowReport();
 end;
 
 procedure TForm8.BitBtn1Click(Sender: TObject);

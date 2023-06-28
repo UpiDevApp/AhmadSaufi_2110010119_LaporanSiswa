@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Buttons, ComCtrls, Grids, DBGrids, DB,
   ZAbstractRODataset, ZAbstractDataset, ZDataset, ZAbstractConnection,
-  ZConnection;
+  ZConnection, frxClass, frxDBSet;
 
 type
   TForm6 = class(TForm)
@@ -41,6 +41,8 @@ type
     cbb2: TComboBox;
     edt7: TEdit;
     BitBtn: TBitBtn;
+    frxdataortu: TfrxDBDataset;
+    frxortu: TfrxReport;
     procedure posisiawal;
     procedure bersih;
     procedure BitBtn1Click(Sender: TObject);
@@ -117,8 +119,7 @@ end;
 
 procedure TForm6.BitBtn5Click(Sender: TObject);
 begin
-bersih;
-posisiawal;
+frxortu.ShowReport();
 end;
 
 procedure TForm6.BitBtn2Click(Sender: TObject);

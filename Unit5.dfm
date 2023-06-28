@@ -358,6 +358,57 @@ object Form5: TForm5
   object ds1: TDataSource
     DataSet = ZQuery1
     Left = 800
-    Top = 152
+    Top = 128
+  end
+  object frxdatasemester: TfrxDBDataset
+    UserName = 'frxdatasemester'
+    CloseDataSource = False
+    DataSet = ZQuery1
+    Left = 712
+    Top = 192
+  end
+  object frxuserfrxsemester: TfrxReport
+    Version = '4.0.11'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45105.641708194450000000
+    ReportOptions.LastChange = 45105.641708194450000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 800
+    Top = 192
+    Datasets = <
+      item
+        DataSet = frxdatasemester
+        DataSetName = 'frxdatasemester'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      object ReportTitle1: TfrxReportTitle
+        Height = 22.677180000000000000
+        Top = 18.897650000000000000
+        Width = 793.701300000000000000
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 34.015770000000000000
+        Top = 64.252010000000000000
+        Width = 793.701300000000000000
+      end
+    end
   end
 end

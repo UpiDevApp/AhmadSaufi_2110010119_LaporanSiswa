@@ -5,7 +5,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Buttons, Grids, DBGrids, DB, ZAbstractRODataset,
-  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection;
+  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection, frxClass,
+  frxDBSet;
 
 type
   TForm2 = class(TForm)
@@ -23,6 +24,9 @@ type
     ds1: TDataSource;
     cbb1: TComboBox;
     BitBtn: TBitBtn;
+    frxReport1: TfrxReport;
+    frxdatakelas: TfrxDBDataset;
+    frxrprt3: TfrxReport;
     procedure BitBtn2Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure BitBtn3Click(Sender: TObject);
@@ -164,8 +168,7 @@ end;
 
 procedure TForm2.BitBtn5Click(Sender: TObject);
 begin
-   posisiawal;
-  bersih;
+  frxrprt3.showreport();
 end;
 
 procedure TForm2.FormShow(Sender: TObject);

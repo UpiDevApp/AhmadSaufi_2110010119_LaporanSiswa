@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 208
-  Top = 154
+  Left = 202
+  Top = 145
   Width = 958
   Height = 566
   Caption = 'TABEL SISWA'
@@ -490,7 +490,7 @@ object Form1: TForm1
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45105.577583101900000000
-    ReportOptions.LastChange = 45105.589425868100000000
+    ReportOptions.LastChange = 45105.614201620370000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -534,14 +534,27 @@ object Form1: TForm1
           ParentFont = False
           VAlign = vaCenter
         end
+        object Memo22: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 7.559060000000000000
+          Width = 786.142240000000000000
+          Height = 41.574830000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          ParentFont = False
+        end
       end
       object PageHeader1: TfrxPageHeader
-        Height = 34.015770000000000000
+        Height = 18.897650000000000000
         Top = 90.708720000000000000
         Width = 793.701300000000000000
         object Memo12: TfrxMemoView
           Left = 3.779530000000000000
-          Top = 15.118120000000000000
           Width = 83.149660000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -560,7 +573,6 @@ object Form1: TForm1
         end
         object Memo13: TfrxMemoView
           Left = 86.929190000000000000
-          Top = 15.118120000000000000
           Width = 90.708720000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -579,7 +591,6 @@ object Form1: TForm1
         end
         object Memo14: TfrxMemoView
           Left = 253.228510000000000000
-          Top = 15.118120000000000000
           Width = 98.267780000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -598,7 +609,6 @@ object Form1: TForm1
         end
         object Memo15: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 15.118120000000000000
           Width = 75.590600000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -617,7 +627,6 @@ object Form1: TForm1
         end
         object Memo16: TfrxMemoView
           Left = 430.866420000000000000
-          Top = 15.118120000000000000
           Width = 79.370130000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -636,7 +645,6 @@ object Form1: TForm1
         end
         object Memo17: TfrxMemoView
           Left = 510.236550000000000000
-          Top = 15.118120000000000000
           Width = 90.708720000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -655,7 +663,6 @@ object Form1: TForm1
         end
         object Memo18: TfrxMemoView
           Left = 351.496290000000000000
-          Top = 15.118120000000000000
           Width = 79.370130000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -674,7 +681,6 @@ object Form1: TForm1
         end
         object Memo19: TfrxMemoView
           Left = 600.945270000000000000
-          Top = 15.118120000000000000
           Width = 68.031540000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -693,7 +699,6 @@ object Form1: TForm1
         end
         object Memo20: TfrxMemoView
           Left = 668.976810000000000000
-          Top = 15.118120000000000000
           Width = 56.692950000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -712,7 +717,6 @@ object Form1: TForm1
         end
         object Memo21: TfrxMemoView
           Left = 725.669760000000000000
-          Top = 15.118120000000000000
           Width = 64.252010000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -731,8 +735,8 @@ object Form1: TForm1
         end
       end
       object MasterData1: TfrxMasterData
-        Height = 45.354360000000000000
-        Top = 185.196970000000000000
+        Height = 18.897650000000000000
+        Top = 170.078850000000000000
         Width = 793.701300000000000000
         DataSet = frxdatasiswa
         DataSetName = 'frxdatasiswa'

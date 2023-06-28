@@ -360,8 +360,8 @@ object Form6: TForm6
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\ASUS\Desktop\tugas akhir delphi7\libmysql.dll'
-    Left = 608
-    Top = 160
+    Left = 472
+    Top = 144
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -369,12 +369,378 @@ object Form6: TForm6
     SQL.Strings = (
       'select * from ortu')
     Params = <>
-    Left = 680
-    Top = 160
+    Left = 528
+    Top = 144
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 744
-    Top = 160
+    Left = 584
+    Top = 144
+  end
+  object frxdataortu: TfrxDBDataset
+    UserName = 'frxdataortu'
+    CloseDataSource = False
+    DataSet = ZQuery1
+    Left = 680
+    Top = 144
+  end
+  object frxortu: TfrxReport
+    Version = '4.0.11'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45105.624539548600000000
+    ReportOptions.LastChange = 45105.632402963000000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 752
+    Top = 152
+    Datasets = <
+      item
+        DataSet = frxdataortu
+        DataSetName = 'frxdataortu'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      object ReportTitle1: TfrxReportTitle
+        Height = 41.574830000000000000
+        Top = 18.897650000000000000
+        Width = 793.701300000000000000
+        object Memo17: TfrxMemoView
+          Left = 83.149660000000000000
+          Top = 11.338590000000000000
+          Width = 593.386210000000000000
+          Height = 30.236240000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'Laporan Data Orang Tua')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 18.897650000000000000
+        Top = 83.149660000000000000
+        Width = 793.701300000000000000
+        object Memo1: TfrxMemoView
+          Left = 83.149660000000000000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'nik')
+          ParentFont = False
+        end
+        object Memo2: TfrxMemoView
+          Left = 124.724490000000000000
+          Width = 75.590600000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'Nama ortu')
+          ParentFont = False
+        end
+        object Memo3: TfrxMemoView
+          Left = 200.315090000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'pendidikan')
+          ParentFont = False
+        end
+        object Memo4: TfrxMemoView
+          Left = 279.685220000000000000
+          Width = 71.811070000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'pekerjaan')
+          ParentFont = False
+        end
+        object Memo5: TfrxMemoView
+          Left = 351.496290000000000000
+          Width = 68.031540000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'alamat')
+          ParentFont = False
+        end
+        object Memo6: TfrxMemoView
+          Left = 419.527830000000000000
+          Width = 109.606370000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'Jenis Kelamain')
+          ParentFont = False
+        end
+        object Memo7: TfrxMemoView
+          Left = 529.134200000000000000
+          Width = 60.472480000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'agama')
+          ParentFont = False
+        end
+        object Memo8: TfrxMemoView
+          Left = 589.606680000000000000
+          Width = 86.929190000000000000
+          Height = 18.897650000000000000
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 1.500000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'Telepone')
+          ParentFont = False
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 18.897650000000000000
+        Top = 162.519790000000000000
+        Width = 793.701300000000000000
+        DataSet = frxdataortu
+        DataSetName = 'frxdataortu'
+        RowCount = 0
+        object Memo9: TfrxMemoView
+          Left = 83.149660000000000000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          DataField = 'nik'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."nik"]')
+          ParentFont = False
+        end
+        object Memo10: TfrxMemoView
+          Left = 124.724490000000000000
+          Width = 75.590600000000000000
+          Height = 18.897650000000000000
+          DataField = 'nama'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."nama"]')
+          ParentFont = False
+        end
+        object Memo11: TfrxMemoView
+          Left = 200.315090000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          DataField = 'pendidikan'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."pendidikan"]')
+          ParentFont = False
+        end
+        object Memo12: TfrxMemoView
+          Left = 279.685220000000000000
+          Width = 71.811070000000000000
+          Height = 18.897650000000000000
+          DataField = 'pekerjaan'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."pekerjaan"]')
+          ParentFont = False
+        end
+        object Memo13: TfrxMemoView
+          Left = 351.496290000000000000
+          Width = 68.031540000000000000
+          Height = 18.897650000000000000
+          DataField = 'alamat'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."alamat"]')
+          ParentFont = False
+        end
+        object Memo14: TfrxMemoView
+          Left = 419.527830000000000000
+          Width = 109.606370000000000000
+          Height = 18.897650000000000000
+          DataField = 'jenis_kelamin'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."jenis_kelamin"]')
+          ParentFont = False
+        end
+        object Memo15: TfrxMemoView
+          Left = 529.134200000000000000
+          Width = 60.472480000000000000
+          Height = 18.897650000000000000
+          DataField = 'agama'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."agama"]')
+          ParentFont = False
+        end
+        object Memo16: TfrxMemoView
+          Left = 589.606680000000000000
+          Width = 86.929190000000000000
+          Height = 18.897650000000000000
+          DataField = 'telp'
+          DataSet = frxdataortu
+          DataSetName = 'frxdataortu'
+          DisplayFormat.DecimalSeparator = ','
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[frxdataortu."telp"]')
+          ParentFont = False
+        end
+      end
+    end
   end
 end
